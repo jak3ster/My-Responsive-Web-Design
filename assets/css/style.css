@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+#lernantino{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #92cccd;;
+    width: 30%;
+    flex-direction: row-reverse;
+}
+
+.links{
+    display: flex;
+    justify-content:space-between;
+}
+.subtitle{
+    position: relative;
+}
+.cool_subtitle{
+    background-color: #92cccd;;
+    padding: 8px;
+    position: absolute;
+    left: 60%;
+    bottom: 10%;
+}
+
+.cool_subtitle h2{
+    font-size: 36px;
+    font-family: #92cccd;;
+}
+
+
+.header {
+    font-family: #92cccd;;
+    background-color: #31343d;
+    color: #31343d;
+}
+
+.header h1 {
+    font-size: 48px;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+
+}
+
+.header nav ul li {
+    display:inline;
+    margin-left: 25px;
+    padding: 2px 3px;
+    border-bottom: 3px solid #92cccd;
+}
+
+a {
+    color: #92cccd;;
+    text-decoration: none;
+}
+
+p {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.subtitle {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/stripes.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-about {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.am-aside{
+    flex: 0;
+    background-color: #b9c6ae;
+    padding: 20px;
+    border-right: 5px solid #445876;
+}
+
+.am-section{
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.about-me h2 {
+    text-align: right;
+    font-size: 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #445876;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+    padding: 10px;
+}
+
+.main-work {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.w-aside{
+    flex: 0;
+    background-color: #b9c6ae;
+    padding: 20px;
+    border-right: 5px solid #445876;
+}
+
+.w-section{
+    /* flex: 1; */
+    background-color: #fff;
+    padding-left: 20px;
+    width: 80%;
+}
+.item {
+    margin: 10px;
+}
+.w-section.column {
+    flex-direction: column;
+}
+.fill {
+    width: 100%;
+}
+.w-second-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.work h2 {
+    padding-right: 14px;
+    font-size: 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #445876;
+}
+
+#surf-report{
+    height: 500px;
+    border: 5px solid #92cccd;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/surf.jpg");
+}
+
+#led-wall{
+    height: 500px;
+    border: 5px solid #92cccd;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/surf.jpg");
+    width: 50%;
+}
+
+#calculator{
+    height: 500px;
+    border: 5px solid #92cccd;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/surf.jpg");
+    width: 50%;
+}
+
+#pastel-puzzels{
+    height: 500px;
+    border: 5px solid #92cccd;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/surf.jpg");
+    width: 50%;
+}
+
+#run-buddy{
+    height: 500px;
+    border: 5px solid #92cccd;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/surf.jpg");
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.c-aside{
+    flex: 0;
+    background-color: #b9c6ae;
+    padding: 20px;
+    border-right: 5px solid #445876;
+}
+
+.c-section{
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.contact-me h2 {
+    text-align: right;
+    font-size: 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #445876;
+
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+        flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    .am-aside .w-aside {
+        order: -1;
+    }
+    /* Change the header background */
+    header {
+        background: #772014;
+    }
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+        background-color: #bb8588;
+    }
+}
