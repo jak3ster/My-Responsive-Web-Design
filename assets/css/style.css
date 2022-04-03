@@ -53,12 +53,12 @@ body {
     font-size: 20px;
 }
 
-.header nav ul {
+ul {
     list-style-type: none;
 
 }
 
-.header nav ul li {
+ul li {
     display:inline;
     margin-left: 25px;
     padding: 2px 3px;
@@ -99,7 +99,7 @@ p {
 
 .am-section{
     flex: 3;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
 }
 
@@ -119,37 +119,39 @@ p {
 .main-work {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 
 .w-aside{
     flex: 0;
     background-color: #b9c6ae;
-    padding: 20px;
+    padding: 27px;
     border-right: 5px solid #445876;
+    /* padding-right: 5%; */
 }
 
 .w-section{
-    /* flex: 1; */
-    background-color: #fff;
+    flex: 1;
+    /* background-color: #fff; */
     padding-left: 20px;
     width: 80%;
+    margin: 0.5em;
 }
-.item {
+/* .item {
     margin: 10px;
-}
+} */
 .w-section.column {
     flex-direction: column;
 }
-.fill {
+/* .fill {
     width: 100%;
-}
+} */
 .w-second-row{
     display: flex;
     flex-wrap: wrap;
 }
 .work h2 {
-    padding-right: 14px;
+    /* padding-right: 14px; */
     font-size: 38px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #445876;
@@ -161,6 +163,7 @@ p {
     background-size: cover;
     background-position: center;
     background-image: url("../images/surf.jpg");
+    margin: 10px;
 }
 
 #led-wall{
@@ -208,13 +211,13 @@ footer {
 .c-aside{
     flex: 0;
     background-color: #b9c6ae;
-    padding: 20px;
+    padding: 4px;
     border-right: 5px solid #445876;
 }
 
 .c-section{
     flex: 3;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
 }
 
