@@ -99,7 +99,6 @@ p {
 
 .am-section{
     flex: 3;
-    /* background-color: #fff; */
     padding: 20px;
 }
 
@@ -127,25 +126,19 @@ p {
     background-color: #b9c6ae;
     padding: 27px;
     border-right: 5px solid #445876;
-    /* padding-right: 5%; */
 }
 
 .w-section{
     flex: 1;
-    /* background-color: #fff; */
     padding-left: 20px;
     width: 80%;
     margin: 0.5em;
 }
-/* .item {
-    margin: 10px;
-} */
+
 .w-section.column {
     flex-direction: column;
 }
-/* .fill {
-    width: 100%;
-} */
+
 .w-second-row{
     display: flex;
     flex-wrap: wrap;
@@ -217,7 +210,6 @@ footer {
 
 .c-section{
     flex: 3;
-    /* background-color: #fff; */
     padding: 20px;
 }
 
