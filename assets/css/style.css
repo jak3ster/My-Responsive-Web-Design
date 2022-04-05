@@ -150,11 +150,11 @@ p {
     color: #445876;
 }
 
-.surf-report, .w-second-row{
+.surf-report, .w-section.column{
     position: relative;
 }
 
-.sr-title{
+.sr-title, .lw-title, .calc-title, .pp-title, .rb-title{
     position: absolute;
     background-color: #92cccd;
     width: 20%;
@@ -162,10 +162,24 @@ p {
     top: 75%;
 }
 
-.sr-title h3, p{
+.lw-title, .calc-title, .pp-title, .rb-title{
+    width: 30%;
+    margin-left: -1.6rem;
+    top: 50%;
+}
+
+.sr-title h3, .sr-title p, .lw-title h3, .lw-title p, 
+.calc-title h3, .calc-title p, .pp-title h3, .pp-title p, 
+.rb-title h3, .rb-title p {
     text-align: left;
     padding-left: 1rem;
+    word-break: break-all;
 }
+/* 
+.lw-title h3, .lw-title p {
+    text-align: left;
+    padding-left: 1rem;
+} */
 
 #surf-report{
     height: 500px;
@@ -177,7 +191,7 @@ p {
 }
 
 #led-wall{
-    height: 500px;
+    height: 250px;
     border: 5px solid #92cccd;
     background-size: cover;
     background-position: center;
@@ -186,7 +200,7 @@ p {
 }
 
 #calculator{
-    height: 500px;
+    height:250px;
     border: 5px solid #92cccd;
     background-size: cover;
     background-position: center;
@@ -195,7 +209,7 @@ p {
 }
 
 #pastel-puzzels{
-    height: 500px;
+    height: 250px;
     border: 5px solid #92cccd;
     background-size: cover;
     background-position: center;
@@ -204,7 +218,7 @@ p {
 }
 
 #run-buddy{
-    height: 500px;
+    height: 250px;
     border: 5px solid #92cccd;
     background-size: cover;
     background-position: center;
