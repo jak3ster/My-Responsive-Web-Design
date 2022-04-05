@@ -154,7 +154,7 @@ p {
     position: relative;
 }
 
-.sr-title, .lw-title, .calc-title, .pp-title, .rb-title{
+.sr-title, .lw-title, .code-title, .pp-title, .wd-title{
     position: absolute;
     background-color: #92cccd;
     width: 20%;
@@ -162,15 +162,15 @@ p {
     top: 75%;
 }
 
-.lw-title, .calc-title, .pp-title, .rb-title{
+.lw-title, .code-title, .pp-title, .wd-title{
     width: 30%;
     margin-left: -1.6rem;
     top: 50%;
 }
 
 .sr-title h3, .sr-title p, .lw-title h3, .lw-title p, 
-.calc-title h3, .calc-title p, .pp-title h3, .pp-title p, 
-.rb-title h3, .rb-title p {
+.code-title h3, .code-title p, .pp-title h3, .pp-title p, 
+.wd-title h3, .wd-title p {
     text-align: left;
     padding-left: 1rem;
     word-break: break-all;
@@ -190,40 +190,74 @@ p {
     margin: 10px;
 }
 
+#surf-report:hover {
+    background: url("../images/surf-burlesque.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
 #led-wall{
     height: 250px;
     border: 5px solid #92cccd;
     background-size: cover;
     background-position: center;
-    background-image: url("../images/surf.jpg");
+    background-image: url("../images/led-wall.jpg");
     width: 50%;
 }
 
-#calculator{
+#led-wall:hover {
+    background: url("../images/led-wall-green.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#code{
     height:250px;
     border: 5px solid #92cccd;
     background-size: cover;
     background-position: center;
-    background-image: url("../images/surf.jpg");
+    background-image: url("../images/code.jpg");
     width: 50%;
 }
 
+#code:hover {
+    background: url("../images/code.gif") no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
 #pastel-puzzels{
     height: 250px;
     border: 5px solid #92cccd;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    background-image: url("../images/surf.jpg");
+    background-image: url("../images/pastel-puzzles.jpg");
     width: 50%;
 }
 
-#run-buddy{
+#pastel-puzzels:hover {
+    background: url("../images/pastel-puzzles.gif") repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+#web-design{
     height: 250px;
     border: 5px solid #92cccd;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    background-image: url("../images/surf.jpg");
+    background-image: url("../images/html-css.jpg");
     width: 50%;
+}
+
+#web-design:hover {
+    background: url("../images/html-css.gif") repeat;
+    background-size: contain;
+    background-position: center;
+    
 }
 
 footer {
@@ -265,6 +299,8 @@ footer {
     border-bottom: 4px solid #445876;
     color: #445876;
 }
+
+
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
