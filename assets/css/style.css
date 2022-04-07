@@ -25,10 +25,12 @@ body {
   padding: 0 .5rem;
   position: absolute;
   left: 60%;
-  bottom: 15%
+  bottom: 15%;
+  right: 5%
 }
 .cool_subtitle h2 {
-  font-size: larger
+  font-size: larger;
+  text-align: center
 }
 .header {
   background-color: #31343d;
@@ -83,9 +85,7 @@ p {
   color: #445876
 }
 .break {
-  flex-basis: 100%;
-  /* height: 0;
-  padding: 10px */
+  flex-basis: 100%
 }
 .main-work {
   display: flex;
@@ -100,8 +100,6 @@ p {
 }
 .w-section {
   flex: 1;
-  /* padding-left: 20px; */
-  /* width: 80%; */
   margin: .5em
 }
 .w-section.column {
@@ -119,7 +117,6 @@ p {
 .w-section.column {
   position: relative
 }
-
 .code-title,
 .lw-title,
 .pp-title,
@@ -127,17 +124,14 @@ p {
 .wd-title {
   position: absolute;
   background-color: #92cccd;
-  width: 20%;
-  margin-left: .75rem;
-  top: 75%
-}
-.code-title,
-.lw-title,
-.pp-title,
-.wd-title {
   width: 30%;
-  margin-left: -1.6rem;
+  margin-left: 1.75rem;
   top: 50%
+}
+.sr-title {
+  width: 30%;
+  margin-left: 2rem;
+  top: 75%
 }
 .code-title h3,
 .code-title p,
@@ -220,8 +214,8 @@ footer {
   border-right: 5px solid #445876
 }
 .c-section {
-  flex: 3;
-  padding: 20px
+  display: flex;
+  align-items: center
 }
 .contact-me h2 {
   text-align: right;
@@ -295,6 +289,20 @@ footer {
     text-align: left;
     margin-left: 6rem
   }
+  .code-title,
+  .lw-title,
+  .pp-title,
+  .sr-title,
+  .wd-title {
+    width: 50%;
+    margin-left: .75rem;
+    top: 50%
+  }
+  .sr-title {
+    width: 30%;
+    margin-left: 2rem;
+    top: 75%
+  }
 }
 @media screen and (max-width:768px) {
   main,
@@ -305,7 +313,6 @@ footer {
     order: -1
   }
   .cool_subtitle {
-    top: 50%;
     left: 50%;
     bottom: 0;
     transform: translate(-50%,-50%)
@@ -329,29 +336,29 @@ footer {
     flex-direction: column;
     align-items: flex-start
   }
-  .w-second-row{
-    flex-wrap: nowrap;  
+  .w-second-row {
+    flex-wrap: nowrap;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    /* height: 100%;
-    width: 100%; */
+    align-items: center
   }
-  .w-section{
-    flex: none;
+  .w-section {
+    flex: none
   }
-  #surf-report{
-    margin: 0;
+  #surf-report {
+    margin: 0 -.25rem 0 -.25rem
   }
-  #led-wall, #code, #pastel-puzzels, #web-design{
-    width: 100%;
+  #code,
+  #led-wall,
+  #pastel-puzzels,
+  #web-design {
+    width: 100%
   }
-  .sr-title,
   .code-title,
   .lw-title,
   .pp-title,
+  .sr-title,
   .wd-title {
     margin-left: 1rem;
-    width: 30%;
+    width: 30%
   }
 }
