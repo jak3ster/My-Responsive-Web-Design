@@ -84,8 +84,8 @@ p {
 }
 .break {
   flex-basis: 100%;
-  height: 0;
-  padding: 10px
+  /* height: 0;
+  padding: 10px */
 }
 .main-work {
   display: flex;
@@ -100,8 +100,8 @@ p {
 }
 .w-section {
   flex: 1;
-  padding-left: 20px;
-  width: 80%;
+  /* padding-left: 20px; */
+  /* width: 80%; */
   margin: .5em
 }
 .w-section.column {
@@ -119,6 +119,7 @@ p {
 .w-section.column {
   position: relative
 }
+
 .code-title,
 .lw-title,
 .pp-title,
@@ -327,5 +328,30 @@ footer {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-start
+  }
+  .w-second-row{
+    flex-wrap: nowrap;  
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 100%;
+    width: 100%; */
+  }
+  .w-section{
+    flex: none;
+  }
+  #surf-report{
+    margin: 0;
+  }
+  #led-wall, #code, #pastel-puzzels, #web-design{
+    width: 100%;
+  }
+  .sr-title,
+  .code-title,
+  .lw-title,
+  .pp-title,
+  .wd-title {
+    margin-left: 1rem;
+    width: 30%;
   }
 }
