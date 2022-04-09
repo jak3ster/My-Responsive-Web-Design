@@ -11,7 +11,7 @@ In GitHub, navigated to jak3ster.github.io repository and click Settings.
 Then within Settings, navigate to the Source section within the Github Pages section. 
 From the dropdown menu, select master branch and then click Save.
 
-Using the link at hhttps://jak3ster.github.io/My-Responsive-Web-Design/.
+Using the link at https://jak3ster.github.io/My-Responsive-Web-Design/.
 
 ## Usage
 
